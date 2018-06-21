@@ -1,0 +1,40 @@
+@font-face {
+    font-family: HARRYP_import;
+    src:url("../../HARRYP__.ttf");
+}
+
+#head-font {
+    font-family: HARRYP_import;
+    font-size: 70px;
+}
+
+#add-train {
+    font-family: HARRYP_import;
+    font-size: 30px;
+}
+
+#add-user {
+    font-family: HARRYP_import;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 100%;
+    background-color: wheat;
+    margin-top: 25px; 
+}
+
+#head-style {
+    background-color: rgba(167, 55, 55, 0.452);
+    color: white;
+    border: 1px solid wheat;
+}
+
+td {
+    border-top: 1px solid rgb(167, 55, 55)
+}
+
+body {
+    background: url(../images/train.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hogwarts Train Scheduler</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <!-- Jumbotron -->
+        <div class="jumbotron" id="head-style" style="background-color: rgba(167, 55, 55, 0.685);">
+            <h1 class="text-center"><span id="head-font">Hogwarts Train Scheduler</span>
+                <br>
+            </h1>
+            <h3 class="text-center">Harry Potter and his friends need to know when the next train is coming in! They may have found the next horcrux! Please add new train info below.</h3>
+        </div>
+        <div class="row">
+            <!-- Most Recent Member Panel -->
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="border: 2px solid rgba(167, 55, 55);">
+                        <h3 class="panel-title" style="text-align: center; font-size: 20px;"><strong>Current Train Schedule</strong></h3>
+                        <br>
+
+                        <body>
+                            <center>
+                                <table style="width:80%" id="directory">
+                                    <tr>
+                                        <th id="name">Train Name</th>
+                                        <th id="role">Destination</th>
+                                        <th id="startDate">Frequency (min)</th>
+                                        <th id="monthsWorked">Next Arival</th>
+                                        <th id="rate">Minutes Away</th>
+                                    </tr>
+                                    <tbody id="add-employee-row"></tbody>
+
+                                </table>
+                            </center>
+                    </div>
+                </div>
+                <!-- Sign-Up Panel-->
+                <div class="col-lg-12">
+                    <div class="panel panel-default" id="head-style">
+                        <div class="panel-heading" id="head-style" style="border-bottom: 1px solid wheat; border-top: none; border-left: none; border-right: none; background-color: rgba(167, 55, 55, 0.685);">
+                            <h2 class="panel-title">
+                                <span id="add-train"><strong>Add Train</strong></span>
+                            </h2>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Sign-up Form (note the various input "types")-->
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="name-input">Train Name:</label>
+                                    <input class="form-control" id="name-input" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="role-input">Destination:</label>
+                                    <input class="form-control" id="role-input" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="startDate-input">Train Time (HH:MM)</label>
+                                    <input class="form-control" id="startDate-input" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rate-input">Frequency (MIN)</label>
+                                    <input class="form-control" id="rate-input" type="number">
+                                </div>
+                                <button class="btn btn-default" id="add-user" type="submit">S U B M I T</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+                <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+                <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+                </body>
+
+</html>
