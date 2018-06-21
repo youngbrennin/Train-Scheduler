@@ -12,34 +12,34 @@
   var database = firebase.database();
 // start of javascript coding
 var name = [];
-var role = [];
-var startDate = [];
+var place = [];
+var TrainTime = [];
 var monthsWorked = [];
-var rate = [];
+var freq = [];
 var billed = [];
 //Capture Button Click
 $("#add-user").on("click", function (event) {
     event.preventDefault();
     name = $("#name-input").val().trim();
         console.log(name)
-    role = $("#role-input").val().trim();
-        console.log(role);
-    startDate = $("#startDate-input").val().trim();
-        console.log(startDate);
-    rate = $("#rate-input").val().trim();
-        console.log(rate);
+    place = $("#place-input").val().trim();
+        console.log(place);
+    TrainTime = $("#TrainTime-input").val().trim();
+        console.log(TrainTime);
+    freq = $("#freq-input").val().trim();
+        console.log(freq);
 //sends the information to firebase
     database.ref().push({
         name: name,
-        role: role,
-        startDate: startDate,
-        rate: rate
+        place: place,
+        TrainTime: TrainTime,
+        freq: freq
     });
  
 });
 //displays the value typed in into the current employees box
     database.ref().on("child_added", function (snapshot){
-        $("#add-employee-row").append("<tr><td>" + snapshot.val().name +"</td><td>" + snapshot.val().role + "</td><td>" + snapshot.val().rate + "</td><td>" + snapshot.val().startDate + "</td></tr>");
+        $("#add-employee-row").append("<tr><td>" + snapshot.val().name +"</td><td>" + snapshot.val().place + "</td><td>" + snapshot.val().freq + "</td><td>" + snapshot.val().TrainTime + "</td></tr>");
        
     });
         //need a seperate array for total billed

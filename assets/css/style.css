@@ -8,7 +8,17 @@
     font-size: 70px;
 }
 
+.crest {
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
 #add-train {
+    clear: both;
+    overflow: auto;
     font-family: HARRYP_import;
     font-size: 30px;
 }
