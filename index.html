@@ -44,8 +44,8 @@
                                         <th id="name">Train Name</th>
                                         <th id="place">Destination</th>
                                         <th id="TrainTime">Frequency (min)</th>
-                                        <th id="monthsWorked">Next Arival</th>
-                                        <th id="freq">Minutes Away</th>
+                                        <th id="nextArrival">Next Arival</th>
+                                        <th id="freq">Time from Arrival</th>
                                     </tr>
                                     <tbody id="add-employee-row"></tbody>
 
@@ -68,26 +68,27 @@
                             <form role="form">
                                 <div class="form-group">
                                     <label for="name-input">Train Name:</label>
-                                    <input class="form-control" id="name-input" type="text">
+                                    <input class="form-control" id="name-input" placeholder="Hogwarts Express" type="text">
                                 </div>
                                 <div class="form-group">
                                     <label for="place-input">Destination:</label>
-                                    <input class="form-control" id="place-input" type="text">
+                                    <input class="form-control" id="place-input" placeholder="Hogsmeade" type="text">
                                 </div>
                                 <div class="form-group">
                                     <label for="TrainTime-input">Train Time (HHMM)</label>
-                                    <input class="form-control" id="TrainTime-input" type="number">
+                                    <input class="form-control" id="TrainTime-input" placeholder="0130" type="number">
                                 </div>
                                 <div class="form-group">
                                     <label for="freq-input">Frequency (MIN)</label>
-                                    <input class="form-control" id="freq-input" type="number">
+                                    <input class="form-control" id="freq-input" placeholder="30" type="number">
                                 </div>
                                 <button class="btn btn-default" id="add-user" type="submit">S U B M I T</button>
                             </form>
                         </div>
                     </div>
                 </div>
-
+                
+                <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
                 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
                 <script type="text/javascript" src="assets/javascript/app.js"></script>
