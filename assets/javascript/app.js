@@ -35,7 +35,7 @@ $("#add-user").on("click", function (event) {
     var diffTime = moment().diff(moment(convertIt), "minutes");//sends the information to firebase
     var tRemainder = diffTime % freq;
     var tMinutesTillTrain = freq - tRemainder;
-    minutesAway = tRemainder
+    minutesAway = tMinutesTillTrain;
     console.log(minutesAway);
     database.ref().push({
         name: name,
